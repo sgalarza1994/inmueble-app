@@ -2,16 +2,16 @@ apiVersion: v1
 kind: Service
 metadata:
   name: app-service
+  namespace: app
   labels: 
     name: app-service
     app: service
 spec:
-  type : LoadBalancer
+  type : ClusterIP
   selector:
     name: app
     type: netapi
   ports:
   - port: 80
     targetPort: 5000
-    nodePort: 30008
 
