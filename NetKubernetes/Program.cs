@@ -24,6 +24,9 @@ builder.Services.AddDbContext<AppDbContext>(opt => {
      opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
 });
 
+
+
+
 builder.Services.AddScoped<IInmuebleRepository,InmuebleRepository>();
 
 builder.Services.AddControllers(opt => {
@@ -75,9 +78,11 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+ 
 }
+
+   app.UseSwagger();
+    app.UseSwaggerUI();
 
 app.UseMiddleware<ManagerMiddlware>();
 

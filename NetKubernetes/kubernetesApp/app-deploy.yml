@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deploy
+  labels: 
+    name: app-deploy
+    app: app
+spec:
+  replicas : 3
+  selector:
+    matchLabels:
+      name: app
+      type: netapi
+  template:
+    metadata:
+      name: app-pod
+      labels:
+        name: app
+        type: netapi
+    spec:
+      containers:
+      - name: app-api
+        image: steven11/netkubernetes
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 5000
+        env:
+          - name: ConnectionStrings__SqlServerConnection
+            value: Data Source=mssql-service,1436;Initial Catalog=InmuebleDb; user id=sa; password=@Lberto1994;TrustServerCertificate=True

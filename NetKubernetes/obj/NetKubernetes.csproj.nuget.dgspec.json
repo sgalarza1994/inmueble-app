@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stega\\Documents\\project\\cursos\\NetKubernetes\\NetKubernetes.csproj": {}
+    "C:\\Users\\stega\\Documents\\Project\\Cursos\\inmuebleapp\\inmueble-app\\NetKubernetes\\NetKubernetes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stega\\Documents\\project\\cursos\\NetKubernetes\\NetKubernetes.csproj": {
+    "C:\\Users\\stega\\Documents\\Project\\Cursos\\inmuebleapp\\inmueble-app\\NetKubernetes\\NetKubernetes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stega\\Documents\\project\\cursos\\NetKubernetes\\NetKubernetes.csproj",
+        "projectUniqueName": "C:\\Users\\stega\\Documents\\Project\\Cursos\\inmuebleapp\\inmueble-app\\NetKubernetes\\NetKubernetes.csproj",
         "projectName": "NetKubernetes",
-        "projectPath": "C:\\Users\\stega\\Documents\\project\\cursos\\NetKubernetes\\NetKubernetes.csproj",
+        "projectPath": "C:\\Users\\stega\\Documents\\Project\\Cursos\\inmuebleapp\\inmueble-app\\NetKubernetes\\NetKubernetes.csproj",
         "packagesPath": "C:\\Users\\stega\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stega\\Documents\\project\\cursos\\NetKubernetes\\obj\\",
+        "outputPath": "C:\\Users\\stega\\Documents\\Project\\Cursos\\inmuebleapp\\inmueble-app\\NetKubernetes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\stega\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -23,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -43,8 +42,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -52,29 +51,31 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.10, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.AspnetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -108,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
